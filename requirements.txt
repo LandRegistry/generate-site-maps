@@ -1,0 +1,2 @@
+elasticsearch==1.4.0
+asq==1.0
