@@ -1,0 +1,1 @@
+./generate.py --basePageUrl "http://www.property-frontend.gov.uk/property" --elasticsearchUrl "http://ec2-54-154-72-110.eu-west-1.compute.amazonaws.com:4200" --siteMapDirectoryPath "site_maps" --siteMapDirectoryUrl "http://www.property-frontend.gov.uk/site-map" --maxRecordsPerFile=100 --pageSize=100

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {
+    "default": {
+      "format": "%(asctime)s level=[%(levelname)s] logger=[%(name)s] thread=[%(threadName)s] message=[%(message)s] exception=[%(exc_info)s]"
+    }
+  },
+  "handlers": {
+    "file": {
+      "class": "logging.FileHandler",
+      "formatter": "default",
+      "filename": "logs/generate-site-maps.log"
+    },
+    "console": {
+      "class": "logging.StreamHandler",
+      "formatter": "default",
+      "stream": "ext://sys.stdout"
+    }
+  },
+  "loggers": {
+    "service": {
+    },
+    "elasticsearch": {
+        "level": "WARN"
+    }
+  },
+  "root": {
+    "level": "INFO",
+    "handlers": [
+      "file",
+      "console"
+    ]
+  }
+}
+
